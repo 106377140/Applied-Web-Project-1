@@ -16,16 +16,31 @@
 <body>
 
     <!-- Header -->
-    <header>
-        <h1>TechSync</h1>
-
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand-identity">
+                <img src="images\logoipsum-438.png" alt="Techsync Company Logo" class="logo">
+                <div class="brand-text">
+                    <h1 style="letter-spacing: 0.5px;">Techsync</h1>
+                    <p class="slogan">Empowering the Future of Tech</p>
+                </div>
+            </div>
+    
+            <div class="search-container">
+                <label for="site-search" class="sr-only">Search site</label>
+                <input type="text" id="site-search" placeholder="Search site...">
+                <button type="button">Search</button>
+            </div>
+        </div>
+    
+        <!-- Nav Menu -->
         <nav class="common-nav" aria-label="Main Navigation">
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="jobs.html">Jobs</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="apply.html">Apply</a></li>
-        </ul>
+            <ul>
+                <li><a href="index.html" class="active">Apply</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="apply.html">Apply</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -318,16 +333,15 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-
-        <p>&copy; 2026 Company Name</p>
-
-        <p>
-            <a href="#">GitHub</a> |
-            <a href="#">Jira</a> |
-            <a href="mailto:info@companyname.com">Email</a>
-        </p>
-
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Techsync. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="" target="_blank" rel="noopener">Jira Project</a></li>
+                <li><a href="" target="_blank" rel="noopener">GitHub Repository</a></li>
+                <li><a href="mailto:106377140@student.swin.edu.au">106377140@student.swin.edu.au</a></li>
+            </ul>
+        </div>
     </footer>
 
 </body>
