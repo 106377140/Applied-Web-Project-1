@@ -228,3 +228,94 @@ body {
         margin: 0 0 20px 0;
     }
 }
+
+
+/*Apply Page*/
+.application-intro{
+    max-width: 900px;
+    margin: 50px auto 30px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.application-intro h2{
+    font-size: 2.2rem;
+    color:#1a365d;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.application-intro p {
+    color: #64748b;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/*Application form container*/
+
+.application-form{
+    max-width: 850px;
+    margin: 30px auto 60px;
+    padding: 45px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #e1e8ed;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 30px rgba(26,54, 93, 0.08);
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.application-form .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.application-form label, 
+.application-form legend{
+    font-size: 0.95 rem;
+    font-weight: 600;
+    color:#1a365d;
+}
+
+.application-form input:not([type="radio"]):not([type="checkbox"]),
+.application-form select,
+.application-form textarea {
+    width: 100%;
+    padding: 13px 15px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/*Input Hover Effect*/
+.application-form input:not([type="radio"]):not([type="checkbox"]):hover,
+.application-form select:hover,
+.application-form textarea:hover {
+    border-color: #3182ce;
+}
+
+.application-form input:focus-visible,
+.application-form select:focus-visible,
+.application-form textarea:focus-visible{
+    outline: 2px solid #3182ce;
+    outline-offset: 2px;
+    border-color: #3182ce;
+}
+/*Placeholding Styling*/
+.application-form input::placeholder,
+.application-form textarea::placeholder {
+    color: #718096;
+}
