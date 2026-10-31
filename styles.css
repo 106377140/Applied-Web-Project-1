@@ -159,3 +159,72 @@ body {
     color: #ffffff;
     text-decoration: underline;
 }
+
+
+
+/* Jobs Page */
+
+.jobs-page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+/* Aside floated right with 25% width */
+.jobs-aside {
+    float: right;
+    width: 25%;
+    margin: 0 0 20px 20px;
+    padding: 0 0 0 20px;
+    border-left: 3px solid #2368a8;
+}
+
+.jobs-aside h3 {
+    color: #2368a8;
+}
+
+.jobs-aside ul {
+    margin: 10px 0 15px 20px;
+}
+
+/* Job sections */
+.job-section {
+    overflow: hidden; /* keeps the text next to the aside */
+    margin-bottom: 40px;
+}
+
+.job-section h3 {
+    color: #1a365d;
+}
+
+.job-section h4 {
+    color: #2368a8;
+    margin-top: 15px;
+}
+
+.job-section ol,
+.job-section ul {
+    margin-left: 25px;
+}
+
+/* Apply link */
+.apply-button {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2368a8;
+    font-weight: bold;
+}
+
+.apply-button:hover,
+.apply-button:focus {
+    color: #1a365d;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 768px) {
+    .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}

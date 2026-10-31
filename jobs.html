@@ -1,45 +1,227 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+    Jobs page - Techsync
+    Author: Phạm Phước Văn
+    Acknowledgement: GenAI (Gemini) was used to help create this page.
+    The content was checked and edited by Phạm Phước Văn.
+-->
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Job vacancies at Techsync" />
+    <meta name="author" content="Phuoc Van Pham" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Techsync | Jobs</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 
-<body>
+    <link rel="stylesheet" href="styles.css" />
 
+    <style>
+      /* Embedded CSS for the Jobs page */
+      .jobs-intro {
+        margin-bottom: 30px;
+      }
+
+      .jobs-intro h2 {
+        color: #2368a8;
+      }
+
+      .job-ref {
+        color: #2368a8;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
     <header class="site-header">
-        <div class="header-container">
-            <div class="brand-identity">
-                <img src="images\logoipsum-438.png" alt="Techsync Company Logo" class="logo">
-                <div class="brand-text">
-                    <h1 style="letter-spacing: 0.5px;">Techsync</h1>
-                    <p class="slogan">Empowering the Future of Tech</p>
-                </div>
-            </div>
-
-            <div class="search-container">
-                <label for="site-search" class="sr-only">Search site</label>
-                <input type="text" id="site-search" placeholder="Search site..." aria-label="Search site">
-                <button type="button">Search</button>
-            </div>
+      <div class="header-container">
+        <div class="brand-identity">
+          <img
+            src="images/logoipsum-438.png"
+            alt="Techsync Company Logo"
+            class="logo"
+          />
+          <div class="brand-text">
+            <h1 style="letter-spacing: 0.5px">Techsync</h1>
+            <p class="slogan">Empowering the Future of Tech</p>
+          </div>
         </div>
 
-        <!-- Nav Menu -->
-        <nav class="common-nav" aria-label="Main Navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="jobs.html" class="active">Jobs</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="apply.html">Apply</a></li>
-            </ul>
-        </nav>
+        <div class="search-container">
+          <label for="site-search" class="sr-only">Search site</label>
+          <input
+            type="text"
+            id="site-search"
+            placeholder="Search site..."
+            aria-label="Search site"
+          />
+          <button type="button">Search</button>
+        </div>
+      </div>
+
+      <!-- Nav Menu -->
+      <nav class="common-nav" aria-label="Main Navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="jobs.html" class="active">Jobs</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="apply.html">Apply</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main>
-        placeholder
+    <!-- Main Content -->
+    <main class="jobs-page">
+      <!-- Jobs Introduction -->
+      <section class="jobs-intro">
+        <h2>Careers at Techsync</h2>
+
+        <p>
+          Techsync is growing and we are looking for people who enjoy building
+          websites and want to learn with a friendly and supportive team.
+        </p>
+
+        <!-- Inline CSS -->
+        <p style="color: #555">
+          Read the job descriptions below and use the reference number when you
+          submit your application.
+        </p>
+      </section>
+
+      <!-- Why Join Us (Aside) -->
+      <aside class="jobs-aside">
+        <h3>Why Join Techsync?</h3>
+
+        <ul>
+          <li>Work from home two days a week</li>
+          <li>Free training and online courses</li>
+          <li>Support from experienced team members</li>
+        </ul>
+
+        <h3>Inclusive Employment</h3>
+
+        <p>
+          Techsync supports reconciliation. We encourage Aboriginal and Torres
+          Strait Islander Peoples to apply for our positions, and we are happy
+          to provide flexible arrangements for cultural and community
+          responsibilities.
+        </p>
+      </aside>
+
+      <!-- Job 1: Front-End Web Developer -->
+      <article class="job-section">
+        <h3>Front-End Web Developer</h3>
+
+        <p>Reference Number: <span class="job-ref">FED01</span></p>
+
+        <!-- Job Description -->
+        <section>
+          <h4>Job Description</h4>
+
+          <p>
+            As a Front-End Web Developer, you will build and update websites for
+            our clients using HTML and CSS. The websites must be easy to use and
+            work well on both computers and mobile phones.
+          </p>
+        </section>
+
+        <!-- Salary and Reporting Line -->
+        <section>
+          <h4>Salary and Reporting Line</h4>
+
+          <p>Salary: $75,000 - $90,000 per year</p>
+          <p>Reports to: Lead Front-End Developer</p>
+        </section>
+
+        <!-- Key Responsibilities -->
+        <section>
+          <h4>Key Responsibilities</h4>
+
+          <ol>
+            <li>Create web pages using HTML5 and CSS3</li>
+            <li>Make sure all pages follow accessibility guidelines</li>
+            <li>Test websites on different browsers and devices</li>
+            <li>Work with the team and update tasks in Jira</li>
+          </ol>
+        </section>
+
+        <!-- Requirements -->
+        <section>
+          <h4>Essential Requirements</h4>
+
+          <ul>
+            <li>Good knowledge of HTML and CSS</li>
+            <li>Experience using Git and GitHub</li>
+            <li>Basic understanding of web accessibility</li>
+          </ul>
+
+          <h4>Preferable Requirements</h4>
+
+          <ul>
+            <li>A degree in Information Technology</li>
+            <li>Some experience with JavaScript</li>
+          </ul>
+        </section>
+
+        <a href="apply.html" class="apply-button">Apply Now</a>
+      </article>
+
+      <!-- Job 2: UX/UI Designer -->
+      <article class="job-section">
+        <h3>UX/UI Designer</h3>
+
+        <p>Reference Number: <span class="job-ref">UXD02</span></p>
+
+        <!-- Job Description -->
+        <section>
+          <h4>Job Description</h4>
+
+          <p>
+            As a UX/UI Designer, you will design the layout and look of our
+            websites. You will make sure our designs are clear, simple and
+            accessible for all users.
+          </p>
+        </section>
+
+        <!-- Salary and Reporting Line -->
+        <section>
+          <h4>Salary and Reporting Line</h4>
+
+          <p>Salary: $80,000 - $95,000 per year</p>
+          <p>Reports to: Design Manager</p>
+        </section>
+
+        <!-- Key Responsibilities -->
+        <section>
+          <h4>Key Responsibilities</h4>
+
+          <ol>
+            <li>Create wireframes and designs using Figma</li>
+            <li>Talk to users to understand what they need</li>
+            <li>Work with developers to build the designs</li>
+          </ol>
+        </section>
+
+        <!-- Requirements -->
+        <section>
+          <h4>Essential Requirements</h4>
+
+          <ul>
+            <li>A portfolio of design projects</li>
+            <li>Experience using Figma or a similar tool</li>
+          </ul>
+
+          <h4>Preferable Requirements</h4>
+
+          <ul>
+            <li>Basic knowledge of HTML and CSS</li>
+            <li>Experience designing for mobile devices</li>
+          </ul>
+        </section>
+
+        <a href="apply.html" class="apply-button">Apply Now</a>
+      </article>
     </main>
 
     <footer class="site-footer">
@@ -53,6 +235,5 @@
             </ul>
         </div>
     </footer>
-</body>
-
+  </body>
 </html>
