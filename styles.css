@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #f9fbfd;
+}
+
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e1e8ed;
+}
+
+.header-container {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.25rem 2rem; 
+}
+
+.brand-identity {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+.brand-text h1 {
+    font-size: 1.5rem;
+    color: #1a365d;
+}
+
+.slogan {
+    font-size: 0.85rem;
+    color: #171c24;
+}
+
+/* Search Box Styling */
+.search-container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-container input {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #cbd5e0;
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.9rem;
+}
+
+.search-container input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15); /* Accessibility focus ring */
+}
+
+.search-container button {
+    padding: 0.5rem 1rem;
+    background-color: #1a365d;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.search-container button:hover {
+    background-color: #2b6cb0;
+}
+
+/* Navigation Menu */
+.common-nav {
+    background-color: #1a365d;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.common-nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.common-nav li a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.common-nav li a:hover,
+.common-nav li a.active {
+    background-color: #2b6cb0;
+}
+
+
+/* Footer */ 
+
+.site-footer {
+    background-color: #1a365d;
+    color: #a0aec0;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #cbd5e0;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
