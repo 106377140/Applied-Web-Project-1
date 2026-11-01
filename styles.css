@@ -372,9 +372,11 @@ td {
     gap: 8px;
     min-width: 0;
 }
+
 .application-form .form-full {
     grid-column: 1 / -1;
 }
+
 .application-form label,
 .application-form legend {
     font-size: 0.95rem;
@@ -461,7 +463,7 @@ td {
 }
 
 .application-form fieldset label:hover {
-    background-color:#edf5fc;
+    background-color: #edf5fc;
     border-color: #3182ce;
 }
 
@@ -560,6 +562,10 @@ td {
         display: block;
 
         padding: 0.75rem 1.5rem;
+    }
+
+    #table-section {
+        text-align: center;
     }
 }
 
