@@ -96,7 +96,7 @@ body {
 
 .home-intro-image img {
     border-radius: 6px;
-    width: 450px;
+    width: 400px;
     max-width: 100%;
     height: auto;
     border: 2px solid #1a365d;
@@ -124,6 +124,10 @@ body {
     background-color: #1a365d;
     color: #ffffff;
     border-right: 1px solid #e2e8f0;
+}
+
+.home-page th:first-child {
+    border-left: 1px solid #1a365d;
 }
 
 .home-page th:last-child {
@@ -512,9 +516,11 @@ body {
     gap: 8px;
     min-width: 0;
 }
+
 .application-form .form-full {
     grid-column: 1 / -1;
 }
+
 .application-form label,
 .application-form legend {
     font-size: 0.95rem;
@@ -601,7 +607,7 @@ body {
 }
 
 .application-form fieldset label:hover {
-    background-color:#edf5fc;
+    background-color: #edf5fc;
     border-color: #3182ce;
 }
 
@@ -709,6 +715,10 @@ body {
     /* Shared navigation */
     .common-nav ul {
         justify-content: center;
+    }
+
+    #table-section {
+        text-align: center;
     }
 }
 
