@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.table-wrapper {
+    overflow-x: auto;
+}
+
 .sr-only {
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);
@@ -24,16 +28,15 @@ body {
 
 .site-header {
     background-color: #ffffff;
-    border-bottom: 1px solid #e1e8ed;
 }
 
 .header-container {
 
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
     gap: 1rem;
     padding: 1.25rem 2rem;
 }
@@ -65,6 +68,78 @@ body {
     gap: 0.5rem;
 }
 
+/* Home Page */
+.home-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home-section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 2px solid #1a365d;
+}
+
+.home-section h2 {
+    color: #1a365d;
+    margin-bottom: 1rem;
+}
+
+.home-intro-text {
+    flex: 1;
+}
+
+.home-intro-image img {
+    border-radius: 6px;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #1a365d;
+}
+
+
+
+.home-page table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 0.5rem;
+}
+
+.home-page th,
+td {
+    padding: 0.75rem 1rem;
+}
+
+.home-page td {
+    border: 1px solid #1a365d;
+}
+
+.home-page th {
+    background-color: #1a365d;
+    color: #ffffff;
+    border-right: 1px solid #e2e8f0;
+}
+
+.home-page th:last-child {
+    border-right: 1px solid #1a365d;
+}
+
+.home-page table caption {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.department {
+    background-color: #D8E1EB;
+}
+
+/* Navigation Menu */
+
 .search-container input {
     padding: 0.5rem 0.75rem;
     border: 1px solid #cbd5e0;
@@ -93,7 +168,6 @@ body {
     background-color: #2b6cb0;
 }
 
-/* Navigation Menu */
 .common-nav {
     background-color: #1a365d;
     width: 100%;
@@ -189,7 +263,8 @@ body {
 
 /* Job sections */
 .job-section {
-    overflow: hidden; /* keeps the text next to the aside */
+    overflow: hidden;
+    /* keeps the text next to the aside */
     margin-bottom: 40px;
 }
 
@@ -220,27 +295,17 @@ body {
     color: #1a365d;
 }
 
-/* Responsive layout for small screens */
-@media (max-width: 768px) {
-    .jobs-aside {
-        float: none;
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-}
-
-
 /*Apply Page*/
-.application-intro{
+.application-intro {
     max-width: 900px;
     margin: 50px auto 30px;
     padding: 0 20px;
     text-align: center;
 }
 
-.application-intro h2{
+.application-intro h2 {
     font-size: 2.2rem;
-    color:#1a365d;
+    color: #1a365d;
     font-weight: 700;
     margin-bottom: 12px;
 }
@@ -253,7 +318,7 @@ body {
 
 /*Application form container*/
 
-.application-form{
+.application-form {
     max-width: 850px;
     margin: 30px auto 60px;
     padding: 45px;
@@ -263,7 +328,7 @@ body {
     border: 1px solid #e1e8ed;
     border-radius: 14px;
 
-    box-shadow: 0 8px 30px rgba(26,54, 93, 0.08);
+    box-shadow: 0 8px 30px rgba(26, 54, 93, 0.08);
 
     display: flex;
     flex-direction: column;
@@ -276,11 +341,11 @@ body {
     gap: 8px;
 }
 
-.application-form label, 
-.application-form legend{
+.application-form label,
+.application-form legend {
     font-size: 0.95 rem;
     font-weight: 600;
-    color:#1a365d;
+    color: #1a365d;
 }
 
 .application-form input:not([type="radio"]):not([type="checkbox"]),
@@ -309,13 +374,77 @@ body {
 
 .application-form input:focus-visible,
 .application-form select:focus-visible,
-.application-form textarea:focus-visible{
+.application-form textarea:focus-visible {
     outline: 2px solid #3182ce;
     outline-offset: 2px;
     border-color: #3182ce;
 }
+
 /*Placeholding Styling*/
 .application-form input::placeholder,
 .application-form textarea::placeholder {
     color: #718096;
 }
+
+/* Responsive layout for small screens */
+
+@media (max-width: 1032px) {
+    .common-nav ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .common-nav li a {
+        display: block;
+
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .common-nav ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .common-nav li a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .brand-text {
+        display: none;
+    }
+
+    .header-container {
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+}
+
