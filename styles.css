@@ -448,3 +448,110 @@ td {
     
 }
 
+
+.application-form fieldset.form-group {
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+
+    padding: 20px 24px;
+
+    background-color: #f9fbfd;
+}
+
+.application-form fieldset legend {
+    padding: 0 8px;
+    font-weight: 700;
+    color: #1a365d;
+}
+
+.application-form fieldset label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 8px 0;
+
+    font-weight: 400;
+    color: #333333;
+
+    cursor: pointer;
+}
+
+.application-form input[type="radio"],
+.application-form input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+
+    accent-color: #2b6cb0;
+
+    cursor: pointer;
+}
+
+.application-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 15px;
+}
+
+.form-buttons button {
+    padding: 14px 30px;
+
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+/* Submit button */
+
+.form-buttons button[type="submit"] {
+    background-color: #1a365d;
+    color: #ffffff;
+
+    border: 2px solid #1a365d;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background-color: #2b6cb0;
+    border-color: #2b6cb0;
+
+    transform: translateY(-2px);
+}
+
+
+/* Reset button */
+
+.form-buttons button[type="reset"] {
+    background-color: #ffffff;
+    color: #1a365d;
+
+    border: 2px solid #cbd5e0;
+}
+
+.form-buttons button[type="reset"]:hover {
+    background-color: #edf2f7;
+    border-color: #2b6cb0;
+}
+
+
+.form-buttons button:focus-visible {
+    outline: 3px solid #3182ce;
+    outline-offset: 3px;
+}
+
+
