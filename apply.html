@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,31 +9,34 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <style>
-        .application-intro{
+        .application-intro {
             text-align: center;
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
     <header class="site-header">
         <div class="header-container">
             <div class="brand-identity">
-                <img src="images/logoipsum-438.png" alt="Techsync Company Logo" class="logo">
+                <a href="index.html">
+                    <img src="images/logoipsum-438.png" alt="Techsync Company Logo" class="logo">
+                </a>
                 <div class="brand-text">
                     <h1 style="letter-spacing: 0.5px;">Techsync</h1>
                     <p class="slogan">Streamlining Web Project Development</p>
                 </div>
             </div>
-    
+
             <div class="search-container">
                 <label for="site-search" class="sr-only">Search site</label>
                 <input type="text" id="site-search" placeholder="Search site...">
                 <button type="button">Search</button>
             </div>
         </div>
-    
+
         <!-- Nav Menu -->
         <nav class="common-nav" aria-label="Main Navigation">
             <ul>
@@ -61,10 +65,7 @@
 
         </section>
 
-        <form
-            action="https://mercury.swin.edu.au/it000000/formtest.php"
-            method="post"
-            class="application-form">
+        <form action="https://mercury.swin.edu.au/it000000/formtest.php" method="post" class="application-form">
 
             <!-- Job Reference -->
             <div class="form-group form-full">
@@ -72,14 +73,8 @@
                     Job Reference Number *
                 </label>
 
-                <input
-                    type="text"
-                    id="jobref"
-                    name="jobref"
-                    pattern="[A-Za-z0-9]{5}"
-                    maxlength="5"
-                    title="Enter exactly 5 letters or numbers"
-                    required>
+                <input type="text" id="jobref" name="jobref" pattern="[A-Za-z0-9]{5}" maxlength="5"
+                    title="Enter exactly 5 letters or numbers" required>
             </div>
 
             <!-- First Name -->
@@ -88,14 +83,8 @@
                     First Name *
                 </label>
 
-                <input
-                    type="text"
-                    id="firstname"
-                    name="firstname"
-                    maxlength="20"
-                    pattern="[A-Za-z]{1,20}"
-                    title="Use letters only, maximum 20 characters"
-                    required>
+                <input type="text" id="firstname" name="firstname" maxlength="20" pattern="[A-Za-z]{1,20}"
+                    title="Use letters only, maximum 20 characters" required>
             </div>
 
             <!-- Last Name -->
@@ -104,14 +93,8 @@
                     Last Name *
                 </label>
 
-                <input
-                    type="text"
-                    id="lastname"
-                    name="lastname"
-                    maxlength="20"
-                    pattern="[A-Za-z]{1,20}"
-                    title="Use letters only, maximum 20 characters"
-                    required>
+                <input type="text" id="lastname" name="lastname" maxlength="20" pattern="[A-Za-z]{1,20}"
+                    title="Use letters only, maximum 20 characters" required>
             </div>
 
             <!-- Date of Birth -->
@@ -120,13 +103,8 @@
                     Date of Birth *
                 </label>
 
-                <input
-                    type="text"
-                    id="dob"
-                    name="dob"
-                    placeholder="dd/mm/yyyy"
-                    pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}"
-                    title="Enter date as dd/mm/yyyy"
+                <input type="text" id="dob" name="dob" placeholder="dd/mm/yyyy"
+                    pattern="(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}" title="Enter date as dd/mm/yyyy"
                     required>
             </div>
 
@@ -136,27 +114,17 @@
                 <legend>Gender *</legend>
 
                 <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="male"
-                        required>
+                    <input type="radio" name="gender" value="male" required>
                     Male
                 </label>
 
                 <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="female">
+                    <input type="radio" name="gender" value="female">
                     Female
                 </label>
 
                 <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="other">
+                    <input type="radio" name="gender" value="other">
                     Other
                 </label>
 
@@ -168,12 +136,7 @@
                     Street Address *
                 </label>
 
-                <input
-                    type="text"
-                    id="address"
-                    name="address"
-                    maxlength="40"
-                    required>
+                <input type="text" id="address" name="address" maxlength="40" required>
             </div>
 
             <!-- Suburb -->
@@ -182,12 +145,7 @@
                     Suburb / Town *
                 </label>
 
-                <input
-                    type="text"
-                    id="suburb"
-                    name="suburb"
-                    maxlength="40"
-                    required>
+                <input type="text" id="suburb" name="suburb" maxlength="40" required>
             </div>
 
             <!-- State -->
@@ -220,15 +178,8 @@
                     Postcode *
                 </label>
 
-                <input
-                    type="text"
-                    id="postcode"
-                    name="postcode"
-                    pattern="[0-9]{4}"
-                    maxlength="4"
-                    inputmode="numeric"
-                    title="Enter exactly 4 digits"
-                    required>
+                <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}" maxlength="4" inputmode="numeric"
+                    title="Enter exactly 4 digits" required>
             </div>
 
             <!-- Email -->
@@ -237,11 +188,7 @@
                     Email Address *
                 </label>
 
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required>
+                <input type="email" id="email" name="email" required>
             </div>
 
             <!-- Phone -->
@@ -250,13 +197,7 @@
                     Phone Number *
                 </label>
 
-                <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    pattern="[0-9]{8,12}"
-                    title="Enter 8 to 12 digits"
-                    required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{8,12}" title="Enter 8 to 12 digits" required>
             </div>
 
             <!-- Skills -->
@@ -265,35 +206,22 @@
                 <legend>Technical Skills *</legend>
 
                 <label>
-                    <input
-                        type="checkbox"
-                        name="skills[]"
-                        value="HTML"
-                        required>
+                    <input type="checkbox" name="skills[]" value="HTML" required>
                     HTML
                 </label>
 
                 <label>
-                    <input
-                        type="checkbox"
-                        name="skills[]"
-                        value="CSS">
+                    <input type="checkbox" name="skills[]" value="CSS">
                     CSS
                 </label>
 
                 <label>
-                    <input
-                        type="checkbox"
-                        name="skills[]"
-                        value="Python">
+                    <input type="checkbox" name="skills[]" value="Python">
                     Python
                 </label>
 
                 <label>
-                    <input
-                        type="checkbox"
-                        name="skills[]"
-                        value="SQL">
+                    <input type="checkbox" name="skills[]" value="SQL">
                     SQL
                 </label>
 
@@ -306,11 +234,7 @@
                     Other Skills
                 </label>
 
-                <textarea
-                    id="otherskills"
-                    name="otherskills"
-                    rows="5"
-                    placeholder="Describe any additional skills">
+                <textarea id="otherskills" name="otherskills" rows="5" placeholder="Describe any additional skills">
                 </textarea>
 
             </div>
@@ -338,12 +262,15 @@
             <p>&copy; 2026 Techsync. All rights reserved.</p>
             <ul class="footer-links">
                 <li><a href="https://106377140.github.io/Applied-Web-Project-1">Live Github Page</a></li>
-                <li><a href="https://techsync.atlassian.net/jira/software/projects/SCRUM/summary" target="_blank" rel="noopener">Jira Project</a></li>
-                <li><a href="https://github.com/106377140/Applied-Web-Project-1" target="_blank" rel="noopener">GitHub Repository</a></li>
+                <li><a href="https://techsync.atlassian.net/jira/software/projects/SCRUM/summary" target="_blank"
+                        rel="noopener">Jira Project</a></li>
+                <li><a href="https://github.com/106377140/Applied-Web-Project-1" target="_blank" rel="noopener">GitHub
+                        Repository</a></li>
                 <li><a href="mailto:106377140@student.swin.edu.au">106377140@student.swin.edu.au</a></li>
             </ul>
         </div>
     </footer>
 
 </body>
+
 </html>
