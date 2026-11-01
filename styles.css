@@ -9,14 +9,12 @@
 }
 
 .sr-only {
-    clip: rect(1px, 1px, 1px, 1px);
-    clip-path: inset(50%);
-    height: 1px;
-    width: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
     position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
 }
 
 body {
@@ -366,7 +364,7 @@ td {
 
 .application-form label,
 .application-form legend {
-    font-size: 0.95 rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: #1a365d;
 }
