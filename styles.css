@@ -298,10 +298,21 @@ td {
 
 /*Apply Page*/
 .application-intro {
-    max-width: 900px;
-    margin: 50px auto 30px;
-    padding: 0 20px;
-    text-align: center;
+    max-width: 1000px;
+    margin: 65px auto 35px;
+    padding: 0 30px;
+    text-align: left;
+    position: relative;
+}
+
+.application-intro::before {
+    content: "Application";
+    display: block;
+    color: #2b6cb0;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
 }
 
 .application-intro h2 {
@@ -310,8 +321,18 @@ td {
     font-weight: 700;
     margin-bottom: 12px;
 }
+.application-intro h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #3182ce;
+    margin-top: 22px;
+    border-radius: 2px;
+}
 
 .application-intro p {
+    max-width: 600px;
     color: #64748b;
     font-size: 1rem;
     margin-bottom: 8px;
@@ -320,26 +341,27 @@ td {
 /*Application form container*/
 
 .application-form {
-    max-width: 850px;
-    margin: 30px auto 60px;
-    padding: 45px;
+    max-width: 1000px;
+    margin: 0 auto 60px;
+    padding: 55px;
 
     background-color: #ffffff;
-
     border: 1px solid #e1e8ed;
-    border-radius: 14px;
+    border-top: 5px solid #1a365d;
+    border-radius: 4px 4px 16px 16px;
 
     box-shadow: 0 8px 30px rgba(26, 54, 93, 0.08);
 
-    display: flex;
+    display: grid;
     flex-direction: column;
-    gap: 24px;
+    gap: 28px 30px;
 }
 
 .application-form .form-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    min-width: 0;
 }
 
 .application-form label,
