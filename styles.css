@@ -254,14 +254,15 @@ body {
 
 /* Aside floated right with 25% width */
 .jobs-aside {
-    float: none;
-    width: 100%;
-    margin: 25px 0 40px;
-    padding: 28px 32px;
+    float: right;
+    width: 25%;
+    margin: 0px 40px;
+    padding: 20px 32px;
 
     background-color: #edf5fc;
     border-left: 3px solid #2368a8;
     border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(26, 54, 93, 0.06);
 }
 
 .jobs-aside h3 {
@@ -365,7 +366,6 @@ body {
 }
 
 .jobs-page .job-tagline {
-    color: #64748b;
     font-size: 0.95rem;
     line-height: 1.7;
 }
@@ -729,6 +729,14 @@ body {
 @media (max-width: 768px) {
 
     /* Jobs - mobile */
+    .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+        border-top: 3px solid #2368a8;
+        border-left: none;
+    }
+
     .jobs-page .jobs-grid {
         grid-template-columns: 1fr;
     }
