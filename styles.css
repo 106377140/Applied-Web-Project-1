@@ -319,6 +319,7 @@ td {
     font-weight: 700;
     margin-bottom: 12px;
 }
+
 .application-intro h2::after {
     content: "";
     display: block;
@@ -572,6 +573,20 @@ td {
         justify-content: center;
         gap: 1rem;
     }
-    
-}
 
+    .home-page table {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .home-page th,
+    td {
+        padding: 0.1rem 0.5rem;
+    }
+
+    .home-page table caption {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+
+}
