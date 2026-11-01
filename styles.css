@@ -703,157 +703,6 @@ body {
     line-height: 1.5;
 }
 
-/* Tablet & smaller desktop */
-@media (max-width: 1100px) {
-
-    .jobs-page .jobs-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .jobs-page .job-card-header {
-        min-height: 300px;
-        flex-wrap: wrap;
-    }
-
-    .jobs-aside {
-        float: none;
-        width: 100%;
-        margin: 0 0 20px 0;
-        border-top: 3px solid #2368a8;
-        border-left: none;
-    }
-
-    /* Shared navigation */
-    .common-nav ul {
-        justify-content: center;
-    }
-
-    #table-section {
-        text-align: center;
-    }
-}
-
-/* Tablet & mobile */
-@media (max-width: 768px) {
-
-    /* Jobs - mobile */
-
-    .jobs-page .jobs-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .jobs-page .job-card-header {
-        min-height: 0;
-    }
-
-    /* Shared header & footer */
-    .header-container,
-    .footer-container {
-        justify-content: center;
-    }
-
-    .brand-text {
-        display: none;
-    }
-
-    .common-nav ul,
-    .footer-links {
-        justify-content: center;
-    }
-
-    /* Home */
-    .home-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .home-intro-image img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .home-page table {
-        text-align: center;
-        font-size: 0.75rem;
-    }
-
-    .home-page th,
-    .home-page td {
-        padding: 0.1rem 0.5rem;
-    }
-
-    .home-page table caption {
-        margin-bottom: 15px;
-        font-size: 1.1rem;
-    }
-
-    /* Apply */
-    .application-form {
-        grid-template-columns: 1fr;
-        margin: 0 16px 40px;
-        padding: 25px 20px;
-    }
-
-    .application-form .form-full,
-    .application-form fieldset.form-group,
-    .form-buttons {
-        grid-column: 1 / -1;
-    }
-
-    .form-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .form-buttons button {
-        width: 100%;
-    }
-}
-
-/* Small mobile */
-@media (max-width: 480px) {
-
-    /* Shared */
-    .header-container {
-        padding: 16px;
-    }
-
-    .common-nav li a {
-        padding: 10px 12px;
-        font-size: 0.9rem;
-    }
-
-    /* Jobs */
-    .jobs-page {
-        padding: 20px 16px;
-    }
-
-    .jobs-page .job-card-header,
-    .jobs-page .job-card-body,
-    .jobs-page .job-card-footer {
-        padding: 20px;
-    }
-
-    .jobs-page .job-card-header {
-        flex-direction: column;
-    }
-
-    .jobs-page .job-card-header h3 {
-        font-size: 1.5rem;
-    }
-
-    /* Apply */
-    .application-intro {
-        padding: 0 16px;
-    }
-
-    .application-intro h2 {
-        font-size: 1.7rem;
-    }
-
-    .application-form fieldset.form-group {
-        padding: 16px;
-    }
 .about-page {
     max-width: 1100px;
     width: calc(100% - 40px);
@@ -911,7 +760,7 @@ body {
     padding-left: 30px;
 }
 
-.about-page .team-list > li {
+.about-page .team-list>li {
     margin-bottom: 16px;
     padding: 16px;
     background-color: #f4f7fb;
@@ -919,7 +768,7 @@ body {
     border-radius: 6px;
 }
 
-.about-page .team-list > li:last-child {
+.about-page .team-list>li:last-child {
     margin-bottom: 0;
 }
 
@@ -1062,8 +911,113 @@ body {
     border-bottom-color: #c7e0d1;
 }
 
-/* Tablet */
-@media screen and (max-width: 768px) {
+
+/* Tablet & smaller desktop */
+@media (max-width: 1100px) {
+
+    .jobs-page .jobs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .jobs-page .job-card-header {
+        min-height: 300px;
+        flex-wrap: wrap;
+    }
+
+    .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+        border-top: 3px solid #2368a8;
+        border-left: none;
+    }
+
+    /* Shared navigation */
+    .common-nav ul {
+        justify-content: center;
+    }
+
+    #table-section {
+        text-align: center;
+    }
+}
+
+/* Tablet & mobile */
+@media (max-width: 768px) {
+
+    /* Jobs - mobile */
+
+    .jobs-page .jobs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .jobs-page .job-card-header {
+        min-height: 0;
+    }
+
+    /* Shared header & footer */
+    .header-container,
+    .footer-container {
+        justify-content: center;
+    }
+
+    .brand-text {
+        display: none;
+    }
+
+    .common-nav ul,
+    .footer-links {
+        justify-content: center;
+    }
+
+    /* Home */
+    .home-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-intro-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .home-page table {
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .home-page th,
+    .home-page td {
+        padding: 0.1rem 0.5rem;
+    }
+
+    .home-page table caption {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
+    }
+
+    /* Apply */
+    .application-form {
+        grid-template-columns: 1fr;
+        margin: 0 16px 40px;
+        padding: 25px 20px;
+    }
+
+    .application-form .form-full,
+    .application-form fieldset.form-group,
+    .form-buttons {
+        grid-column: 1 / -1;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .form-buttons button {
+        width: 100%;
+    }
+
     .about-page {
         width: calc(100% - 24px);
         margin: 20px auto;
@@ -1083,8 +1037,51 @@ body {
     }
 }
 
-/* Mobile */
-@media screen and (max-width: 480px) {
+/* Small mobile */
+@media (max-width: 480px) {
+
+    /* Shared */
+    .header-container {
+        padding: 16px;
+    }
+
+    .common-nav li a {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Jobs */
+    .jobs-page {
+        padding: 20px 16px;
+    }
+
+    .jobs-page .job-card-header,
+    .jobs-page .job-card-body,
+    .jobs-page .job-card-footer {
+        padding: 20px;
+    }
+
+    .jobs-page .job-card-header {
+        flex-direction: column;
+    }
+
+    .jobs-page .job-card-header h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Apply */
+    .application-intro {
+        padding: 0 16px;
+    }
+
+    .application-intro h2 {
+        font-size: 1.7rem;
+    }
+
+    .application-form fieldset.form-group {
+        padding: 16px;
+    }
+
     .about-page {
         width: calc(100% - 20px);
         margin: 14px auto;
@@ -1108,7 +1105,7 @@ body {
         padding-left: 22px;
     }
 
-    .about-page .team-list > li {
+    .about-page .team-list>li {
         padding: 12px;
     }
 
@@ -1119,4 +1116,6 @@ body {
     .about-page .team-photo-section figure {
         padding: 10px;
     }
+
 }
+
