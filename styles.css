@@ -96,6 +96,7 @@ body {
 
 .home-intro-image img {
     border-radius: 6px;
+    width: 450px;
     max-width: 100%;
     height: auto;
     border: 2px solid #1a365d;
