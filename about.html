@@ -1,17 +1,17 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about the Techsync team and our project.">
 
     <title>Techsync | About Us</title>
 
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     <style>
-        /* Embedded CSS for the About page */
         .about-intro {
             text-align: center;
             padding: 30px 20px;
@@ -34,54 +34,47 @@
 
 <body>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="site-header">
         <div class="header-container">
+
             <div class="brand-identity">
                 <a href="index.html">
-                    <img src="images/logoipsum-438.png" alt="Techsync Company Logo" class="logo">
+                    <img
+                        src="images/logoipsum-438.png"
+                        alt="Techsync company logo"
+                        class="logo">
                 </a>
+
                 <div class="brand-text">
                     <h1 style="letter-spacing: 0.5px;">Techsync</h1>
-                    <p class="slogan">Streamlining Web Project Development</p>
+                    <p class="slogan">Empowering the Future of Tech</p>
                 </div>
-            </div>
-
-            <div class="search-container">
-
-                <label for="site-search" class="sr-only">
-                    Search site
-                </label>
-
-                <input type="text" id="site-search" placeholder="Search site..." aria-label="Search site">
-
-                <button type="button">Search</button>
-
             </div>
 
         </div>
 
-        <!-- Navigation -->
+        <!-- NAVIGATION -->
         <nav class="common-nav" aria-label="Main Navigation">
-
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="jobs.html">Jobs</a></li>
-                <li><a href="about.html" class="active">About Us</a></li>
+                <li>
+                    <a href="about.html" class="active" aria-current="page">
+                        About Us
+                    </a>
+                </li>
                 <li><a href="apply.html">Apply</a></li>
             </ul>
-
         </nav>
-
     </header>
 
-    <!-- Main Content -->
+    <!-- MAIN CONTENT -->
     <main class="about-page">
 
-        <!-- About Introduction -->
-        <section class="about-intro">
-
-            <h2>About Techsync</h2>
+        <!-- ABOUT INTRODUCTION -->
+        <section class="about-intro" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Techsync</h2>
 
             <p>
                 Welcome to Techsync, a technology-focused recruitment
@@ -99,106 +92,94 @@
                 Our goal is to make the job search process clearer,
                 more convenient and more user-friendly.
             </p>
-
         </section>
 
-        <!-- Team Introduction -->
-        <section class="team-section">
-
-            <h2>Meet Our Team</h2>
+        <!-- TEAM INTRODUCTION -->
+        <section class="team-section" aria-labelledby="team-heading">
+            <h2 id="team-heading">Meet Our Team</h2>
 
             <p>
                 We are a team of four students collaborating to plan,
                 design and develop the Techsync website. Each member
-                contributes ideas and effort to help achieve our
-                shared project goals.
+                contributes ideas and effort to achieve our shared goals.
             </p>
 
             <ol class="team-list">
-
                 <li>
                     <strong>Văn Gia Thuỵ</strong>
                     <ul>
-                        <li>Student ID: To be added</li>
-                        <li>Role: To be confirmed</li>
+                        <li>Role: Home Page</li>
                     </ul>
                 </li>
 
                 <li>
                     <strong>Phạm Phước Văn</strong>
                     <ul>
-                        <li>Student ID: To be added</li>
-                        <li>Role: To be confirmed</li>
+                        <li>Role: Jobs Page</li>
                     </ul>
                 </li>
 
                 <li>
                     <strong>Trần Thị Thuỳ Linh</strong>
                     <ul>
-                        <li>Student ID: 105953248</li>
-                        <li>Role: Application Page</li>
+                        <li>Role: Apply Page</li>
                     </ul>
                 </li>
 
                 <li>
                     <strong>Đông Thanh Gia Nguyên</strong>
                     <ul>
-                        <li>Student ID: To be added</li>
-                        <li>Role: To be confirmed</li>
+                        <li>Role: About Page</li>
                     </ul>
                 </li>
-
             </ol>
-
         </section>
 
-        <!-- Team Contributions -->
-        <section class="contributions-section">
+        <!-- TEAM CONTRIBUTIONS -->
+        <section
+            class="contributions-section"
+            aria-labelledby="contributions-heading">
 
-            <h2>Team Contributions</h2>
+            <h2 id="contributions-heading">Team Contributions</h2>
 
             <p>
-                Successful teamwork requires communication,
-                planning and shared responsibility. Our team uses
-                project management tools to organise tasks, monitor
-                progress and coordinate website development.
+                Each team member focuses on a page while collaborating
+                to maintain a consistent design and user experience.
             </p>
 
             <dl>
-
                 <dt>Văn Gia Thuỵ</dt>
                 <dd>
-                    Contribution: To be updated with the member's
-                    actual responsibilities.
+                    Responsible for developing the Home page and
+                    presenting the company's services and project information.
                 </dd>
 
                 <dt>Phạm Phước Văn</dt>
                 <dd>
-                    Contribution: To be updated with the member's
-                    actual responsibilities.
+                    Responsible for developing the Jobs page, including
+                    job descriptions, requirements and application links.
                 </dd>
 
                 <dt>Trần Thị Thuỳ Linh</dt>
                 <dd>
-                    Responsible for developing and styling the Job Application page using HTML5 and CSS3. Designed a
-                    responsive application form, implemented input validation, and ensured consistency with the
-                    website's overall design and accessibility requirements.
+                    Responsible for developing the Apply page and
+                    organising the job application form.
                 </dd>
 
                 <dt>Đông Thanh Gia Nguyên</dt>
                 <dd>
-                    Contribution: To be updated with the member's
-                    actual responsibilities.
+                    Responsible for developing the About page and
+                    presenting team information.
                 </dd>
-
             </dl>
-
         </section>
 
-        <!-- Team Values and Quotes -->
-        <section class="team-quote-section">
+        <!-- TEAM VALUES -->
+        <section
+            class="team-quote-section"
+            aria-labelledby="values-heading">
 
-            <h2>Our Team Values</h2>
+            <h2 id="values-heading">Our Team Values</h2>
 
             <blockquote>
                 <p>
@@ -215,86 +196,88 @@
                 and responsibilities, our team can work towards
                 a common goal.
             </p>
-
         </section>
 
-        <!-- Team Photo -->
-        <section class="team-photo-section">
+        <!-- TEAM PHOTO -->
+        <section
+            class="team-photo-section"
+            aria-labelledby="photo-heading">
 
-            <h2>Our Team in Action</h2>
+            <h2 id="photo-heading">Our Team in Action</h2>
 
             <figure>
-
-                <img src="images/Team_member.jpg" alt="The four members of the Techsync project team"
+                <img
+                    src="images/Team_member.jpg"
+                    alt="The Techsync project team"
                     class="team-photo">
 
                 <figcaption>
-                    The Techsync team working together on the
-                    Applied Web Project.
+                    The Techsync team working on the Applied Web Project.
                 </figcaption>
-
             </figure>
-
         </section>
 
-        <!-- Team Fun Facts -->
-        <section class="fun-facts-section">
+        <!-- FUN FACTS -->
+        <section
+            class="fun-facts-section"
+            aria-labelledby="facts-heading">
 
-            <h2>Fun Facts About Our Team</h2>
+            <h2 id="facts-heading">Fun Facts About Our Team</h2>
 
             <p>
                 Get to know our team members through their interests
                 and favourite activities.
             </p>
 
-            <table>
+            <div class="about-table-wrapper">
+                <table>
+                    <caption>Getting to Know the Techsync Team</caption>
 
-                <caption>Getting to Know the Techsync Team</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Team Member</th>
+                            <th scope="col">Interest</th>
+                            <th scope="col">Fun Fact</th>
+                        </tr>
+                    </thead>
 
-                <thead>
-                    <tr>
-                        <th scope="col">Team Member</th>
-                        <th scope="col">Interest</th>
-                        <th scope="col">Fun Fact</th>
-                    </tr>
-                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Văn Gia Thuỵ</td>
+                            <td>To be added</td>
+                            <td>To be added</td>
+                        </tr>
 
-                <tbody>
+                        <tr>
+                            <td>Phạm Phước Văn</td>
+                            <td>To be added</td>
+                            <td>To be added</td>
+                        </tr>
 
-                    <tr>
-                        <td>Văn Gia Thuỵ</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                    </tr>
+                        <tr>
+                            <td>Trần Thị Thuỳ Linh</td>
+                            <td>To be added</td>
+                            <td>To be added</td>
+                        </tr>
 
-                    <tr>
-                        <td>Phạm Phước Văn</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                    </tr>
-
-                    <tr>
-                        <td>Trần Thị Thuỳ Linh</td>
-                        <td>Artificial Intelligence & Web Development</td>
-                        <td>Enjoys combining technoly with creative design.</td>
-                    </tr>
-
-                    <tr>
-                        <td>Đông Thanh Gia Nguyên</td>
-                        <td>To be added</td>
-                        <td>To be added</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
+                        <tr>
+                            <td>Đông Thanh Gia Nguyên</td>
+                            <td>To be added</td>
+                            <td>To be added</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
 
-        <!-- Acknowledgement of Country -->
-        <section class="acknowledgement-section">
+        <!-- ACKNOWLEDGEMENT OF COUNTRY -->
+        <section
+            class="acknowledgement-section"
+            aria-labelledby="acknowledgement-heading">
 
-            <h2>Acknowledgement of Country</h2>
+            <h2 id="acknowledgement-heading">
+                Acknowledgement of Country
+            </h2>
 
             <p>
                 We acknowledge the Traditional Custodians of the lands
@@ -303,26 +286,49 @@
                 Elders past and present, and recognise their continuing
                 connection to land, waters and community.
             </p>
-
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer class="site-footer">
         <div class="footer-container">
+
             <p>&copy; 2026 Techsync. All rights reserved.</p>
+
             <ul class="footer-links">
-                <li><a href="https://106377140.github.io/Applied-Web-Project-1">Live Github Page</a></li>
-                <li><a href="https://techsync.atlassian.net/jira/software/projects/SCRUM/summary" target="_blank"
-                        rel="noopener">Jira Project</a></li>
-                <li><a href="https://github.com/106377140/Applied-Web-Project-1" target="_blank" rel="noopener">GitHub
-                        Repository</a></li>
-                <li><a href="mailto:106377140@student.swin.edu.au">106377140@student.swin.edu.au</a></li>
+                <li>
+                    <a href="https://106377140.github.io/Applied-Web-Project-1">
+                        Live Website
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://techsync.atlassian.net/jira/software/projects/SCRUM/summary"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        Jira Project
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://github.com/106377140/Applied-Web-Project-1"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        GitHub Repository
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:106377140@student.swin.edu.au">
+                        Contact Us
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
 
 </body>
-
 </html>
