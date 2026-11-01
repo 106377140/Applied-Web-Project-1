@@ -126,6 +126,10 @@ td {
     border-right: 1px solid #e2e8f0;
 }
 
+.home-page th:first-child {
+    border-left: 1px solid #1a365d;
+}
+
 .home-page th:last-child {
     border-right: 1px solid #1a365d;
 }
