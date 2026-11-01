@@ -271,12 +271,14 @@ body {
 .jobs-aside ul {
     margin: 10px 0 15px 20px;
 }
+
 .jobs-page .jobs-grid {
-    display:grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-    gap:28px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
     align-items: stretch;
 }
+
 /* Job sections */
 .job-section {
     overflow: hidden;
@@ -353,6 +355,7 @@ body {
 
     margin-bottom: 12px;
 }
+
 .jobs-page .job-card-header h3 {
     color: #1a365d;
     font-size: clamp(1.4rem, 2vw, 2rem);
@@ -637,7 +640,7 @@ body {
     align-items: center;
     gap: 16px;
     margin-top: 15px;
-    
+
     grid-column: 1 / -1;
 }
 
@@ -761,7 +764,18 @@ body {
     }
 
     .home-page table {
-        font-size: 0.85rem;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .home-page th,
+    .home-page td {
+        padding: 0.1rem 0.5rem;
+    }
+
+    .home-page table caption {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
     }
 
     /* Apply */
