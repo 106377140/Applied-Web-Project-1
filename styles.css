@@ -386,68 +386,6 @@ td {
     color: #718096;
 }
 
-/* Responsive layout for small screens */
-
-@media (max-width: 1032px) {
-    .common-nav ul {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .common-nav li a {
-        display: block;
-
-        padding: 0.75rem 1.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .jobs-aside {
-        float: none;
-        width: 100%;
-        margin: 0 0 20px 0;
-    }
-
-    .home-section {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-    }
-
-
-    .common-nav ul {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .common-nav li a {
-        display: block;
-        padding: 0.75rem 1.25rem;
-    }
-
-    .brand-text {
-        display: none;
-    }
-
-    .header-container {
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 2rem;
-    }
-
-    .footer-container {
-        justify-content: center;
-    }
-
-    .footer-links {
-        justify-content: center;
-        gap: 1rem;
-    }
-    
-}
-
 
 .application-form fieldset.form-group {
     border: 1px solid #e1e8ed;
@@ -554,4 +492,65 @@ td {
     outline-offset: 3px;
 }
 
+/* Responsive layout for small screens */
+
+@media (max-width: 1032px) {
+    .common-nav ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .common-nav li a {
+        display: block;
+
+        padding: 0.75rem 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .jobs-aside {
+        float: none;
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    .common-nav ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .common-nav li a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+    }
+
+    .brand-text {
+        display: none;
+    }
+
+    .header-container {
+        justify-content: center;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .footer-container {
+        justify-content: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+        gap: 1rem;
+    }
+    
+}
 
