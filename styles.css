@@ -297,9 +297,9 @@ td {
 /*Apply Page*/
 .application-intro {
     max-width: 1000px;
-    margin: 65px auto 35px;
+    margin: 45px auto 25px;
     padding: 0 30px;
-    text-align: left;
+    text-align: center;
     position: relative;
 }
 
@@ -326,7 +326,7 @@ td {
     width: 65px;
     height: 4px;
     background: #3182ce;
-    margin-top: 22px;
+    margin: 18px auto 0;
     border-radius: 2px;
 }
 
@@ -334,15 +334,16 @@ td {
     max-width: 600px;
     color: #64748b;
     font-size: 1rem;
-    margin-bottom: 8px;
+    margin: 0 auto 8px;
+    text-align: center;
 }
 
 /*Application form container*/
 
 .application-form {
-    max-width: 1000px;
+    max-width: 920px;
     margin: 0 auto 60px;
-    padding: 55px;
+    padding: 45px;
 
     background-color: #ffffff;
     border: 1px solid #e1e8ed;
@@ -352,7 +353,7 @@ td {
     box-shadow: 0 8px 30px rgba(26, 54, 93, 0.08);
 
     display: grid;
-    flex-direction: column;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px 30px;
 }
 
@@ -362,7 +363,9 @@ td {
     gap: 8px;
     min-width: 0;
 }
-
+.application-form .form-full {
+    grid-column: 1 / -1;
+}
 .application-form label,
 .application-form legend {
     font-size: 0.95rem;
@@ -412,10 +415,16 @@ td {
 .application-form fieldset.form-group {
     border: 1px solid #e1e8ed;
     border-radius: 10px;
-
     padding: 20px 24px;
-
     background-color: #f9fbfd;
+    grid-column: 1 / -1;
+    min-width: 0;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
 }
 
 .application-form fieldset legend {
@@ -425,16 +434,31 @@ td {
 }
 
 .application-form fieldset label {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 10px;
 
-    margin: 8px 0;
+    padding: 12px 18px;
+    background-color: #ffffff;
+    border: 1px solid #dce5ef;
+    border-radius: 6px;
 
     font-weight: 400;
     color: #333333;
 
     cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.application-form fieldset label:hover {
+    background-color:#edf5fc;
+    border-color: #3182ce;
+}
+
+.application-form fieldset label:has(input:checked) {
+    backgroundd-color: #eaf3ff;
+    border-color: #2b6cb0;
 }
 
 .application-form input[type="radio"],
