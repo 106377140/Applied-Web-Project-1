@@ -838,6 +838,7 @@ body {
     border-radius: 4px;
     font-size: 0.9rem;
     border: 1px solid #2368a8;
+    display: inline-block;
 }
 
 .about-page td:hover {
