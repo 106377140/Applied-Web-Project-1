@@ -6,6 +6,7 @@
 
 .table-wrapper {
     overflow-x: auto;
+    max-width: 100%;
 }
 
 .sr-only {
@@ -104,7 +105,8 @@ body {
 
 
 
-.home-page table {
+.home-page table,
+.about-page table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
@@ -112,25 +114,31 @@ body {
 }
 
 .home-page th,
-.home-page td {
+.home-page td,
+.about-page th,
+.about-page td {
     padding: 0.75rem 1rem;
 }
 
-.home-page td {
+.home-page td,
+.about-page td {
     border: 1px solid #1a365d;
 }
 
-.home-page th {
+.home-page th,
+.about-page th {
     background-color: #1a365d;
     color: #ffffff;
     border-right: 1px solid #e2e8f0;
 }
 
-.home-page th:first-child {
+.home-page th:first-child,
+.about-page th:first-child {
     border-left: 1px solid #1a365d;
 }
 
-.home-page th:last-child {
+.home-page th:last-child,
+.about-page th:last-child {
     border-right: 1px solid #1a365d;
 }
 
@@ -139,9 +147,11 @@ body {
     font-size: 1.25rem;
 }
 
-.department {
+.department,
+.team-member {
     background-color: #D8E1EB;
 }
+
 
 /* Navigation Menu */
 
@@ -703,214 +713,141 @@ body {
     line-height: 1.5;
 }
 
+/* About Page */
 .about-page {
-    max-width: 1100px;
-    width: calc(100% - 40px);
-    margin: 32px auto;
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 3rem;
 }
 
-/* Introduction */
-.about-page .about-intro {
-    padding: 32px 24px;
-    margin-bottom: 28px;
-    text-align: center;
-    background-color: #ebefff;
-    border: 1px solid #c8dff4;
-    border-left: 5px solid #2368a8;
-    border-radius: 10px;
-}
 
-.about-page .about-intro h2 {
-    color: #2368a8;
-    border-bottom: none;
-}
-
-.about-page .about-intro p {
-    max-width: 800px;
-    margin: 12px auto;
-    line-height: 1.8;
-}
-
-/* Common sections */
-.about-page .team-section,
-.about-page .contributions-section,
-.about-page .team-quote-section,
-.about-page .team-photo-section,
-.about-page .fun-facts-section,
-.about-page .acknowledgement-section {
-    margin-bottom: 28px;
-    padding: 28px;
+.about-main section {
+    display: flow-root;
     background-color: #ffffff;
-    border: 1px solid #dce5ef;
-    border-radius: 10px;
-    box-shadow: 0 5px 18px rgba(26, 54, 93, 0.06);
-}
-
-/* Section headings */
-.about-page section h2 {
-    color: #1a365d;
-    margin-top: 0;
-    margin-bottom: 18px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #c8dff4;
-}
-
-/* Team list */
-.about-page .team-list {
-    padding-left: 30px;
-}
-
-.about-page .team-list>li {
-    margin-bottom: 16px;
-    padding: 16px;
-    background-color: #f4f7fb;
-    border-left: 4px solid #2368a8;
-    border-radius: 6px;
-}
-
-.about-page .team-list>li:last-child {
-    margin-bottom: 0;
-}
-
-.about-page .team-list ul {
-    margin-top: 8px;
-    padding-left: 24px;
-}
-
-.about-page .team-list ul li {
-    margin: 5px 0;
-}
-
-/* Contributions */
-.about-page .contributions-section dl {
-    margin: 0;
-}
-
-.about-page .contributions-section dt {
-    margin-top: 20px;
-    color: #2368a8;
-    font-weight: bold;
-}
-
-.about-page .contributions-section dt:first-child {
-    margin-top: 0;
-}
-
-.about-page .contributions-section dd {
-    margin: 8px 0 0;
-    padding: 12px 16px;
-    line-height: 1.7;
-    background-color: #f4f7fb;
-    border-left: 3px solid #c8dff4;
-    border-radius: 4px;
-}
-
-/* Quote */
-.about-page .team-quote-section blockquote {
-    margin: 20px 0;
-    padding: 20px 24px;
-    background-color: #edf5fc;
-    border-left: 5px solid #2368a8;
-    border-radius: 6px;
-}
-
-.about-page .team-quote-section blockquote p {
-    margin-top: 0;
-    line-height: 1.8;
-    font-size: 1.1rem;
-}
-
-.about-page .team-highlight {
-    color: #2368a8;
-    font-weight: bold;
-}
-
-.about-page .team-quote-section blockquote footer {
-    color: #475569;
-    text-align: right;
-    font-style: italic;
-}
-
-/* Team photo */
-.about-page .team-photo-section figure {
-    margin: 0;
-    padding: 16px;
-    background-color: #f4f7fb;
-    border: 1px solid #dce5ef;
+    margin: 2rem 0;
+    padding: 2.5rem;
+    padding-top: 1rem;
     border-radius: 8px;
+    border: 2px solid #1a365d;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 100%;
 }
 
-.about-page .team-photo {
-    display: block;
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    max-height: 500px;
-    margin: 0 auto;
-    object-fit: contain;
-    border-radius: 6px;
-}
 
-.about-page .team-photo-section figcaption {
-    margin-top: 14px;
-    color: #475569;
-    text-align: center;
-    line-height: 1.6;
-    font-size: 0.95rem;
-}
-
-/* Fun facts table */
-.about-page .about-table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
-
-.about-page .fun-facts-section table {
-    width: 100%;
-    min-width: 480px;
-    margin-top: 16px;
-    border-collapse: collapse;
-    background-color: #ffffff;
-}
-
-.about-page .fun-facts-section caption {
-    padding: 12px;
+.about-main h1 {
+    font-size: 2.25rem;
     color: #1a365d;
-    font-weight: bold;
-    text-align: left;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-.about-page .fun-facts-section th,
-.about-page .fun-facts-section td {
-    padding: 14px 16px;
-    border: 1px solid #c8dff4;
-    text-align: left;
-    line-height: 1.6;
+.about-main h2 {
+    border-bottom: 2px solid #a9c1d6;
+    padding-bottom: 0.3rem;
+    font-size: 1.5rem;
+    color: #1a365d;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
-.about-page .fun-facts-section th {
-    background-color: #1a365d;
-    color: #ffffff;
+/* --- Nested List Styling --- */
+.about-main ul {
+    list-style-type: disc;
+    padding-left: 1.2rem;
 }
 
-.about-page .fun-facts-section tbody tr:nth-child(even) {
+.about-main ul ul {
+    margin-top: 0.5rem;
+    list-style-type: circle;
+    padding-left: 1.2rem;
+}
+
+.about-main li {
+    margin-bottom: 0.35rem;
+    color: #34495e;
+}
+
+
+#about-image-section {
+    margin-top: 0;
+}
+
+.about-aside {
+    float: right;
+    padding: 15px 20px;
     background-color: #edf5fc;
+    border-left: 3px solid #2368a8;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 25%;
+    margin-left: 1rem;
 }
 
-.about-page .fun-facts-section tbody tr:hover {
-    background-color: #d8e9f8;
+
+
+.about-figure {
+    border: 2px solid #1a365d;
+    border-radius: 6px;
+    background-color: #1a365d;
+    text-align: center;
+    display: table;
 }
 
-/* Acknowledgement */
-.about-page .acknowledgement-section {
-    background-color: #f0f7f2;
-    border-left: 5px solid #43866a;
+.about-figure img {
+    max-width: 100%;
+    border-radius: 4px;
+    display: block;
 }
 
-.about-page .acknowledgement-section h2 {
-    border-bottom-color: #c7e0d1;
+.about-figure figcaption {
+    display: table-caption;
+    caption-side: top;
+    margin-bottom: 0.5rem;
 }
 
+.about-main dl {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.about-main dt {
+    font-size: 1.05rem;
+    color: #2368a8;
+    font-weight: 500;
+}
+
+.about-main dd {
+    margin-left: 0;
+    padding-left: 1rem;
+    border-left: 3px solid #2368a8;
+    margin-bottom: 0.5rem;
+    color: #475569;
+}
+
+.about-main dd p {
+    margin-bottom: 0.2rem;
+}
+
+.student-id {
+    font-family: monospace;
+    background-color: #ebf5fb;
+    color: #2368a8;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    border: 1px solid #2368a8;
+}
+
+.about-page td:hover {
+    background-color: #edf5fc;
+    color: #2368a8;
+}
+
+.team-member:hover {
+    color: #333333;
+}
 
 /* Tablet & smaller desktop */
 @media (max-width: 1100px) {
@@ -930,6 +867,24 @@ body {
         margin: 0 0 20px 0;
         border-top: 3px solid #2368a8;
         border-left: none;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-aside {
+        width: 100%;
+        float: none;
+        margin: 0 0 20px 0;
+        border-top: 3px solid #2368a8;
+        border-left: none;
+    }
+
+    .about-aside h2 {
+        text-align: center;
+
     }
 
     /* Shared navigation */
@@ -981,15 +936,25 @@ body {
         height: auto;
     }
 
-    .home-page table {
+    .home-page table,
+    .about-page table {
         text-align: center;
         font-size: 0.75rem;
     }
 
+    .about-page td,
+    th {
+        font-size: 0.56rem;
+    }
+
     .home-page th,
-    .home-page td {
+    .home-page td,
+    .about-page th,
+    .about-page td {
         padding: 0.1rem 0.5rem;
     }
+
+
 
     .home-page table caption {
         margin-bottom: 15px;
@@ -1018,22 +983,17 @@ body {
         width: 100%;
     }
 
-    .about-page {
-        width: calc(100% - 24px);
-        margin: 20px auto;
+    .about-main section {
+        text-align: center;
     }
 
-    .about-page .team-section,
-    .about-page .contributions-section,
-    .about-page .team-quote-section,
-    .about-page .team-photo-section,
-    .about-page .fun-facts-section,
-    .about-page .acknowledgement-section {
-        padding: 20px;
+    .about-main dd {
+        border-left: none;
+        border-bottom: 3px solid #a9c1d6;
     }
 
-    .about-page .about-intro {
-        padding: 24px 18px;
+    .about-main dd:last-child {
+        border-bottom: none;
     }
 }
 
@@ -1082,40 +1042,5 @@ body {
         padding: 16px;
     }
 
-    .about-page {
-        width: calc(100% - 20px);
-        margin: 14px auto;
-    }
-
-    .about-page .team-section,
-    .about-page .contributions-section,
-    .about-page .team-quote-section,
-    .about-page .team-photo-section,
-    .about-page .fun-facts-section,
-    .about-page .acknowledgement-section {
-        padding: 14px;
-        margin-bottom: 18px;
-    }
-
-    .about-page .about-intro {
-        padding: 20px 14px;
-    }
-
-    .about-page .team-list {
-        padding-left: 22px;
-    }
-
-    .about-page .team-list>li {
-        padding: 12px;
-    }
-
-    .about-page .team-quote-section blockquote {
-        padding: 16px;
-    }
-
-    .about-page .team-photo-section figure {
-        padding: 10px;
-    }
 
 }
-
